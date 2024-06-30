@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+//import SearchPage from './components/SearchPage/SearchPage';
+//<Route path="/app/search" element={<SearchPage/>} />
 
 export default function Navbar() {
     return (
@@ -12,6 +15,9 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/app">Gifts</a> {/* Updated Link */}
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/app/search">Searchh</Link>
                     </li>
                 </ul>
             </div>
